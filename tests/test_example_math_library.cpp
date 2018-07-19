@@ -11,7 +11,7 @@ TestResult test_add(){
 }
 
 TestResult test_sub(){
-    if(sub(4,10) == -6){
+    if(sub(4,10) == 6){
         return TestResult::SUCCESS;
     }
     return TestResult::FAILURE;
@@ -30,6 +30,5 @@ TestResult run_tests(){
 }
 
 int main(){
-    //return (int)run_tests();
-    return 1;
+    return (int)run_tests();
 }
